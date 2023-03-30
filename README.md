@@ -1,5 +1,5 @@
 # kor4randomwords  
-![움짤예시](https://user-images.githubusercontent.com/101985768/228952996-dae2eeb7-a556-487d-87cd-96f7150859b6.gif)
+![움짤예시](https://user-images.githubusercontent.com/101985768/228954420-cc35e35e-3235-47a5-9c50-30e056eae253.gif)
 고유명사로 이뤄진 한글 랜덤단어 생성을 위한 JSON 데이터셋입니다.  
 맑은하늘, 늦은호송, 슬픈저주와 같이 한국어로 구성된 4글자 고유명사를 생성할 수 있습니다.  
    
