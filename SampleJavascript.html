@@ -14,7 +14,7 @@
 		}while(maxAdjective <= randAdjective && randAdjective >= maxAdjective);
 		
 		do{
-			randNoun = window.crypto.getRandomValues(new Uint16Array(1))[0];
+			randNoun = Math.floor(Math.random() * maxNoun);
 		}while(maxAdjective <= randNoun && randNoun >= maxAdjective);
 		
 		document.write(data.adjective[randAdjective]+data.noun[randNoun]);
