@@ -13,9 +13,7 @@
 		}while(maxAdjective <= randAdjective && randAdjective >= maxAdjective);
 		do{
 			randNoun = window.crypto.getRandomValues(new Uint16Array(1))[0];
-			if(randNoun.length >= maxNoun.length){
-				console.log(randNoun);
-			}
+			console.log(String(maxNoun).length);
 		}while(maxAdjective <= randNoun && randNoun >= maxAdjective);
 		console.log(randAdjective, randNoun);
 	});
