@@ -1,3 +1,7 @@
 <script type='text/javascript'>
+	fetch('https://cdn.jsdelivr.net/gh/squarehacker/kor4randomwords/resource/dataset.json').then(function(data){
+		console.log(data);
+		
+	});
 	console.log(window.crypto.getRandomValues(new Uint8Array(1)));
 </script>
