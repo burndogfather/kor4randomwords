@@ -6,3 +6,6 @@
 
 4자리 숫자 (10,000개)보다 더 다양한 경우의 수를 지원합니다.  
 (80개 형용사 + 2059개 명사 = 총 164,720개의 경우의 수)  
+  
+  
+[JS데모](https://git.coco.sqs.kr/kor4randomwords/sample.html)   
