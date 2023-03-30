@@ -6,13 +6,16 @@
 		console.log(data);
 		let maxAdjective = Object.keys(data.adjective).length;
 		let maxNoun = Object.keys(data.noun).length;
+		let lengthNoun = maxNoun.length;
 		let randAdjective, randNoun;
 		do{
 			randAdjective = window.crypto.getRandomValues(new Uint8Array(1))[0];
 		}while(maxAdjective <= randAdjective && randAdjective >= maxAdjective);
 		do{
 			randNoun = window.crypto.getRandomValues(new Uint16Array(1))[0];
-			console.log(randNoun);
+			if(randNoun.length >= maxNoun.length){
+				console.log(randNoun);
+			}
 		}while(maxAdjective <= randNoun && randNoun >= maxAdjective);
 		console.log(randAdjective, randNoun);
 	});
