@@ -4,10 +4,13 @@
 	.then((response) => response.json())
 	.then(function(data){
 		console.log(data);
-		let adjectiveCnt = Object.keys(data.adjective).length;
-		let nounCnt = Object.keys(data.noun).length;
-		console.log(adjectiveCnt, nounCnt);
-		console.log(window.crypto.getRandomValues(new Uint8Array(1)), window.crypto.getRandomValues(new Uint16Array(1)));
+		let maxAdjective = Object.keys(data.adjective).length;
+		let maxNoun = Object.keys(data.noun).length;
+		let randAdjective, randNoun;
+		do{
+			randAdjective = window.crypto.getRandomValues(new Uint8Array(1))[0];
+		}while(randAdjective <= maxAdjective && randAdjective >= maxAdjective);
+		console.log(maxAdjective, randAdjective);
 	});
 	
 	
