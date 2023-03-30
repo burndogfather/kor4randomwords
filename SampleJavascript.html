@@ -15,11 +15,14 @@
 			randNoun = Math.floor(Math.random() * maxNoun);
 			
 			document.clear();
+			document.querySelector('h2').innerText = data.adjective[randAdjective]+data.noun[randNoun];
 			document.write(data.adjective[randAdjective]+data.noun[randNoun]);
 			
-		},500);
+		},200);
 	});
 	
 	
 	
 </script>
+
+<h3><h3>
