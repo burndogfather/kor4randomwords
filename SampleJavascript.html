@@ -14,7 +14,7 @@
 		do{
 			randNoun = window.crypto.getRandomValues(new Uint16Array(1))[0];
 			if(String(maxNoun).length < String(randNoun).length){
-				randNoun = String(randNoun).slice(-String(randNoun).length+1);
+				randNoun = parseInt(String(randNoun).slice(-String(randNoun).length+1));
 				console.log(randNoun);
 			}
 		}while(maxAdjective <= randNoun && randNoun >= maxAdjective);
