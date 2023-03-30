@@ -2,8 +2,8 @@
 	
 	fetch('https://cdn.jsdelivr.net/gh/squarehacker/kor4randomwords/resource/dataset.json')
 	.then((response) => response.json())
-	.then(function(json){
-		console.log(JSON.parse(json));
+	.then(function(data){
+		console.log(data.adjective);
 		console.log(window.crypto.getRandomValues(new Uint8Array(1)));
 	});
 	
