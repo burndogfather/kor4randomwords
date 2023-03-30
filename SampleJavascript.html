@@ -9,15 +9,9 @@
 		let lengthNoun = maxNoun.length;
 		let randAdjective, randNoun;
 		
-		do{
-			randAdjective = window.crypto.getRandomValues(new Uint16Array(1))[0];
-		}while(maxAdjective <= randAdjective && randAdjective >= maxAdjective);
-		
-		do{
-			randNoun = Math.floor(Math.random() * maxNoun);
-		}while(maxAdjective <= randNoun && randNoun >= maxAdjective);
+		randAdjective = Math.floor(Math.random() * maxAdjective);
 		randNoun = Math.floor(Math.random() * maxNoun);
-		console.log(randNoun);
+		
 		document.write(data.adjective[randAdjective]+data.noun[randNoun]);
 	});
 	
