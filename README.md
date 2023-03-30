@@ -8,4 +8,5 @@
 (80개 형용사 + 2059개 명사 = 총 164,720개의 경우의 수)  
   
   
-[JS데모](https://git.coco.sqs.kr/kor4randomwords/sample.html)   
+[JS데모](https://git.coco.sqs.kr/kor4randomwords/sample.html)
+![화면-기록-2023-03-31-오전-4 47 38](https://user-images.githubusercontent.com/101985768/228948639-d14273e8-7807-4c1a-9057-fa06d07c2c99.gif)
