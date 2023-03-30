@@ -9,10 +9,14 @@
 		let lengthNoun = maxNoun.length;
 		let randAdjective, randNoun;
 		
-		randAdjective = Math.floor(Math.random() * maxAdjective);
-		randNoun = Math.floor(Math.random() * maxNoun);
-		
-		document.write(data.adjective[randAdjective]+data.noun[randNoun]);
+		setInterval(function(){ 
+			
+			randAdjective = Math.floor(Math.random() * maxAdjective);
+			randNoun = Math.floor(Math.random() * maxNoun);
+			
+			document.write(data.adjective[randAdjective]+data.noun[randNoun]);
+			
+		},500);
 	});
 	
 	
