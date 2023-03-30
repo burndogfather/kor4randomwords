@@ -16,7 +16,8 @@
 		do{
 			randNoun = Math.floor(Math.random() * maxNoun);
 		}while(maxAdjective <= randNoun && randNoun >= maxAdjective);
-		
+		randNoun = Math.floor(Math.random() * maxNoun);
+		console.log(randNoun);
 		document.write(data.adjective[randAdjective]+data.noun[randNoun]);
 	});
 	
