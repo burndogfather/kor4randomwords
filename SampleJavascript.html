@@ -1,15 +1,11 @@
 <script type='text/javascript'>
 	
-	function get_resource(){
-		fetch('https://cdn.jsdelivr.net/gh/squarehacker/kor4randomwords/resource/dataset.json')
-		.then((response) => response.json())
-		.then(function(data){
-			return data;
-		});
-	};
+	fetch('https://cdn.jsdelivr.net/gh/squarehacker/kor4randomwords/resource/dataset.json')
+	.then((response) => response.json())
+	.then(function(json){
+		console.log(JSON.parse(json));
+		console.log(window.crypto.getRandomValues(new Uint8Array(1)));
+	});
 	
-	let dataset;
-	dataset = await get_resource();
-	console.log(dataset);
-	console.log(window.crypto.getRandomValues(new Uint8Array(1)));
+	
 </script>
