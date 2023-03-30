@@ -15,5 +15,5 @@ fetch('https://cdn.jsdelivr.net/gh/squarehacker/kor4randomwords/resource/dataset
 		
 		document.querySelector('h1').innerText = data.adjective[randAdjective]+data.noun[randNoun];
 		
-	},70);
+	},50);
 });
