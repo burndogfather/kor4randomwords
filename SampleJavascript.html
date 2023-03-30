@@ -9,14 +9,14 @@
 		let lengthNoun = maxNoun.length;
 		let randAdjective, randNoun;
 		do{
-			randAdjective = window.crypto.getRandomValues(new Uint8Array(1))[0];
+			randAdjective = window.crypto.getRandomValues(new Uint16Array(1))[0];
 		}while(maxAdjective <= randAdjective && randAdjective >= maxAdjective);
 		do{
 			randNoun = window.crypto.getRandomValues(new Uint16Array(1))[0];
 		}while(maxAdjective <= randNoun && randNoun >= maxAdjective);
 		console.log(randAdjective, randNoun);
 	});
-	console.log(window.crypto.getRandomValues(new Uint16Array(1)));
+	console.log(window.crypto.getRandomValues(new Uint8Array(1)));
 	
 	
 </script>
